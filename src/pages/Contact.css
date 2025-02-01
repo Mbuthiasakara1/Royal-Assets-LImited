@@ -1,0 +1,191 @@
+.contact-container {
+  text-align: center;
+  width: 100%;
+ 
+}
+.contact-container h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px auto;
+}
+.info-box {
+  width: 350px;
+  height: 250px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info-box h3 {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.info-box p {
+  font-size: 20px;
+  color: black;
+}
+
+.info-icon {
+  font-size: 40px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-form-map {
+  display: flex;
+  gap: 96px;
+  justify-content: center;
+  align-items: center;
+  margin: 4em 0;
+}
+
+.map-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.form-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.info-box-location{
+  text-align:left;
+  gap:10px;
+  width: 350px;
+  height: 250px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.location-style {
+  text-align:left;
+  font-size:18px;
+}
+@media (max-width: 768px) {
+  .contact-container h1 {
+    font-size: 24px; /* Reduce heading font size */
+    margin-bottom: 16px; /* Adjust margin */
+  }
+
+  .contact-info {
+    flex-direction: column; /* Stack info boxes vertically */
+    align-items: center;
+    gap: 20px; /* Add spacing between stacked boxes */
+    margin-bottom: 2em;
+  }
+  .info-box-location{
+    width: 300px; 
+    height: auto; 
+    padding: 16px; 
+
+  }
+  .info-box-location h3{
+   font-size:20px;
+  }
+
+  .info-box-location p{
+      font-size:16px;
+    }
+
+  .info-box {
+    width: 300px; 
+    height: auto; 
+    padding: 16px; 
+  }
+
+  .info-box h3 {
+    font-size: 20px; 
+  }
+
+  .info-box p {
+    font-size: 16px; 
+  }
+
+  .contact-form-map {
+    flex-direction: column;
+    gap: 32px; 
+    margin: 2em 0; 
+  }
+
+
+  .map-container iframe {
+    width: 80vw; 
+    height: 350px; /* Adjust height for smaller screens */
+
+  }
+  .form-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .contact-container h1 {
+    font-size: 20px; /* Further reduce heading font size */
+    margin-bottom: 12px;
+  }
+
+  .contact-info {
+    gap: 16px; /* Reduce spacing between stacked boxes */
+  }
+  
+  .info-box {
+    width: 260px; /* Further reduce box width */
+    padding: 12px; /* Reduce padding */
+    border-radius: 8px; /* Adjust border radius */
+  }
+
+  .info-box h3 {
+    font-size: 18px; /* Further reduce subheading font size */
+    margin-bottom: 8px; /* Adjust margin */
+  }
+
+  .info-box p {
+    font-size: 14px; /* Further reduce paragraph font size */
+  }
+  .info-box-location{
+    width: 260px; 
+    padding: 12px; 
+    border-radius: 8px; 
+
+  }
+  .info-box-location h3{
+     font-size: 18px; /* Further reduce subheading font size */
+    margin-bottom: 8px; /* Adjust margin */
+  }
+  .info-box-location p{
+    font-size:14px;
+  }
+  .contact-form-map {
+    gap: 24px; /* Reduce spacing between form and map */
+    margin: 1.5em 0; /* Adjust overall margin */
+  }
+
+  .map-container iframe {
+    width: 80vw; /* Keep map responsive */
+    height: 250px; /* Reduce height for smaller screens */
+  }
+}

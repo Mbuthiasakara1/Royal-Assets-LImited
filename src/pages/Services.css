@@ -1,0 +1,162 @@
+.service-container{
+    margin-top:6em;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-bottom: 3em;
+}
+
+.service-info{
+    text-align:center;
+    margin-bottom:50px;
+ 
+}
+.service-info h1{
+    font-size:24px;
+    margin-bottom:10px;
+}
+.service-info p{
+    font-size:16px;
+}
+.card-1{
+    display:flex;
+    width:80%;
+    gap:98.51px;
+
+}
+.card-1 img {
+    width:40%;
+}
+.card1-info{
+    width:50%;
+    gap:1em;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+   
+}
+.card1-info  p{
+    font-size:16px;
+    line-height:24px;
+}
+.card1-info h2 {
+    text-align:left;
+}
+
+.card1-info button {
+    background-color: #BC1F28;
+    color: #FFFFFF;
+    font-size: 1rem;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    width:147px;
+    height:39px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.card1-info button:hover {
+    background-color: #f44336;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .service-container {
+      margin-top: 6em;
+      margin-bottom: 2em;
+      padding: 0 1em;
+    }
+  
+    .service-info h1 {
+      font-size: 20px; /* Adjust heading size */
+    }
+  
+    .service-info p {
+      font-size: 14px; /* Adjust text size */
+    }
+  
+    .card-1 {
+      flex-direction: column; /* Stack image and text */
+      align-items: center;
+      width: 90%; /* Reduce width */
+      gap: 1.5em; /* Reduce gap */
+      margin-bottom: 2em; /* Add spacing between cards */
+    }
+  
+    .card-1 img {
+      width: 100%; /* Full width */
+      height: auto; /* Maintain aspect ratio */
+    }
+  
+    .card1-info {
+      width: 100%; /* Full width */
+      text-align: center; /* Center-align content */
+    }
+  
+    .card1-info h2 {
+      font-size: 18px; /* Adjust heading size */
+    }
+  
+    .card1-info p {
+      font-size: 14px; /* Adjust text size */
+      line-height: 1.4em;
+    }
+  
+    .card1-info button {
+      width: 120px; /* Adjust button size */
+      height: 36px;
+      font-size: 0.9rem; /* Adjust font size */
+    }
+    .card-1.card-2{
+        flex-direction: column-reverse;
+    }
+  }
+  
+  @media (max-width: 430px) {
+    .service-container {
+      margin-top: 6em;
+      margin-bottom: 1em;
+      padding: 0 0.5em; /* Reduce padding */
+    }
+  
+    .service-info h1 {
+      font-size: 18px; /* Further reduce heading size */
+    }
+  
+    .service-info p {
+      font-size: 12px; /* Further reduce text size */
+    }
+  
+    .card-1 {
+      width: 100%; 
+      gap: 1em; 
+      margin-bottom: 1.5em;
+      flex-direction: column;
+    }
+  
+    .card-1 img {
+      width: 100%; /* Full width */
+      height: auto; /* Maintain aspect ratio */
+    }
+  
+    .card1-info {
+      width: 100%; /* Full width */
+      text-align: center; /* Center-align content */
+    }
+  
+    .card1-info h2 {
+      font-size: 16px; /* Adjust heading size */
+    }
+  
+    .card1-info p {
+      font-size: 12px; /* Further reduce text size */
+      line-height: 1.3em;
+    }
+  
+    .card1-info button {
+      width: 120px; /* Adjust button size */
+      height: 32px;
+      font-size: 0.8rem; /* Adjust font size */
+    }
+  }
+  

@@ -1,0 +1,142 @@
+.swiper{
+  width:100%;
+  height:90%;
+  margin-top: 2.7em;
+}
+.image-container{
+  width: 100%;
+  height: 90vh;
+}
+.swiper-images{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.swiper-content{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color:rgba(0,0,0,0.5);
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;   
+}
+.swiper-text h1{
+    text-align: left;
+    color:white;
+    font-size:50px;
+    margin-left:70px;
+    margin-bottom:20px;
+    width:600px;
+}
+.swiper-btn{
+    width:100%;
+    display:flex;
+    justify-content:flex-start;
+    margin-left:70px;
+}
+.hero-btn{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #B91F1F;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 160px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  vertical-align:middle;
+}
+
+.hero-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.hero-btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.hero-btn:hover span {
+  padding-right: 25px;
+}
+
+.hero-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+@media(max-width:768px){
+  .swiper{
+    height: 70vh;
+  }
+  .swiper-images{
+    height: 100%;
+  }
+  .swiper-text h1{
+    font-size:30px;
+  }
+  .hero-btn{
+    font-size: 14px;
+    width: 130px;
+    height: 40px;
+  }
+}
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: rgba(0, 0, 0, 0.5);  
+  color: white;  
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; 
+}
+
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: rgba(0, 0, 0, 0.7); 
+}
+
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px;
+}
+@media(max-width:430px){
+  .swiper{
+    height: 60vh;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+  .swiper-images{
+    height: 100%;
+  }
+  .swiper-text h1{
+    font-size:30px;
+    width: 300px;
+    margin-left: 1em;
+  }
+  .swiper-btn{
+    margin-left: 1em;
+  }
+  .hero-btn{
+    font-size: 14px;
+    width: 130px;
+    height: 40px;
+    margin-left: 1em;
+  }
+}

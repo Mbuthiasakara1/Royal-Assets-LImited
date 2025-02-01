@@ -1,0 +1,48 @@
+.header-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .project-header {
+    margin-top: 5.5em;
+    width: 100%;
+    height: 60vh;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .project-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay covering the whole image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px; /* Ensures overlay matches the image's rounded corners */
+  }
+  
+  .project-text h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
+  }
+@media(max-width:768px) {
+  .header-container {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    margin: 0 auto;
+  }
+  .project-header{
+    height: 100%;
+  }
+}

@@ -1,0 +1,63 @@
+.gallery-container{
+    margin-bottom:4em;
+}
+@media (max-width: 768px) {
+    .gallery-container {
+      padding: 1em; 
+      margin-bottom: 3em;
+    }
+  
+    .gallery-container button {
+      font-size: 14px; 
+      padding: 8px 16px; 
+    }
+  
+    .gallery-container h4 {
+      font-size: 28px; 
+      margin-bottom: 1.5em;
+    }
+  
+    .gallery-container .MuiImageList-root {
+      grid-template-columns: repeat(2, 1fr) !important; 
+      gap: 12px; 
+    }
+  
+    .gallery-container .MuiImageListItem-root img {
+      height: 180px; 
+    }
+  }
+  
+  @media (max-width: 430px) {
+    .gallery-container {
+      padding: 0.5em; /* Reduce padding further */
+      margin-bottom: 2em;
+    }
+  
+    .gallery-container button {
+      font-size: 12px; /* Further reduce button font size */
+      padding: 6px 12px; /* Adjust button padding */
+    }
+  
+    .gallery-container h4 {
+      font-size: 24px; /* Further reduce heading font size */
+      margin-bottom: 1em;
+    }
+  
+    .gallery-container .MuiImageList-root {
+      grid-template-columns: 1fr !important; /* Display 1 column */
+      gap: 8px; /* Reduce gap further */
+    }
+  
+    .gallery-container .MuiImageListItem-root img {
+      height: 150px; /* Reduce image height */
+    }
+  
+    .gallery-container .MuiImageListItem-root img:hover {
+      opacity: 1; /* Disable hover opacity effect for small screens */
+    }
+  
+    .gallery-container .MuiImageListItem-root {
+      cursor: default; /* Remove pointer cursor for small screens */
+    }
+  }
+  
