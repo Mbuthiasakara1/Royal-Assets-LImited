@@ -12,35 +12,30 @@ const Navbar = () => {
     setIsMenuOpen((prev) => !prev);
   };
 
-   const handleDownload = async () => {
-     const filePath = "downloads/Malazi_Kenya_Profile.pdf";
-     const fileName = "Malazi Kenya Profile.pdf";
+   const handleDownload = () => {
+     const filePath = "/downloads/Malazi_Kenya_Profile.pdf"; // Ensure this is accessible in the public folder
+     const fileName = "Malazi_Kenya_Profile.pdf";
 
-     // detect IOs
+     // Detect iOS (iPad, iPhone, iPod)
      const isIOS =
-       /iPad|iPhone|iPOd/.test(navigator.userAgent) && !window.MSStream;
+       /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
      try {
-      const response =await fetch(filePath);
-      if (!response.ok){
-        throw new Error("Failed to fetch file")
-      }
-      
-
-      const blob =await response.blob();
-      const url =window.URL.createObjectURL(blob)
-
        if (isIOS) {
-         window.open(url, "_blank");
+         // Open the file in a new tab for iOS users
+         window.open(filePath, "_blank");
        } else {
+         // Create a temporary link element for download
          const link = document.createElement("a");
-         link.href = url;
+         link.href = filePath;
          link.download = fileName;
 
+         // Required for Firefox compatibility
+         link.target = "_blank";
          document.body.appendChild(link);
          link.click();
 
-         //cleanup
+         // Cleanup the temporary link
          setTimeout(() => {
            document.body.removeChild(link);
            window.URL.revokeObjectURL(link.href);
@@ -51,6 +46,7 @@ const Navbar = () => {
        window.open(filePath, "_blank");
      }
    };
+
   return (
     <>
       <div className="nav-container">
