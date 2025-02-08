@@ -12,22 +12,51 @@ const Navbar = () => {
     setIsMenuOpen((prev) => !prev);
   };
 
-  const handleDownload = () => {
-    const filePath = '/downloads/Malazi_Kenya_Profile.pdf'; // Path to the file in the public folder
-    const link = document.createElement('a');
-    link.href = filePath;
-    link.download = 'Malazi Kenya Profile.pdf'; // Suggested filename
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+   const handleDownload = async () => {
+     const filePath = "downloads/Malazi_Kenya_Profile.pdf";
+     const fileName = "Malazi Kenya Profile.pdf";
 
+     // detect IOs
+     const isIOS =
+       /iPad|iPhone|iPOd/.test(navigator.userAgent) && !window.MSStream;
+
+     try {
+      const response =await fetch(filePath);
+      if (!response.ok){
+        throw new Error("Failed to fetch file")
+      }
+      
+
+      const blob =await response.blob();
+      const url =window.URL.createObjectURL(blob)
+
+       if (isIOS) {
+         window.open(url, "_blank");
+       } else {
+         const link = document.createElement("a");
+         link.href = url;
+         link.download = fileName;
+
+         document.body.appendChild(link);
+         link.click();
+
+         //cleanup
+         setTimeout(() => {
+           document.body.removeChild(link);
+           window.URL.revokeObjectURL(link.href);
+         }, 100);
+       }
+     } catch (error) {
+       console.error("Download failed:", error);
+       window.open(filePath, "_blank");
+     }
+   };
   return (
     <>
       <div className="nav-container">
         <div className="logo-container" onClick={() => navigate("/")}>
           <img
-            src="/images/logo2.jpg"
+            src="/images/royalnobg 1.png"
             alt="royal-logo"
             className="logo"
           />

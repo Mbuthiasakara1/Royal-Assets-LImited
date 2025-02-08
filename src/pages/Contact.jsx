@@ -8,7 +8,7 @@ import { useEffect } from "react";
 
 function Contact() {
    useEffect(() => {
-     document.title = "Contact | Malazi Kenya";
+     document.title = "Contact |   Royal Assets Limited";
    }, []);
   return (
     <div>
@@ -27,7 +27,7 @@ function Contact() {
             <img src="icons/mail.svg" alt="phone-icon" />
 
             <h3>Mail Box</h3>
-            <p>info@malazikenyaltd.com</p>
+            <p>info@royalassets.co.ke</p>
           </div>
           <div className="info-box-location">
             <img src="icons/Group.svg" alt="mail-icon" />

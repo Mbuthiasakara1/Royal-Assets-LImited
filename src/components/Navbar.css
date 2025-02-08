@@ -7,7 +7,10 @@
     position: fixed;
     z-index: 200;
     background-color: rgba(255,255,255,1);
+     /* background-color: #1A1A1A; */
+   
     box-shadow:0 4px 6px rgba(0,0,0,0.1);
+    
 }
 .menu-container{
     width: 70%;
@@ -25,10 +28,14 @@
     color: #BC1F28
 }
 .logo{
-    width: 3em;
-    height: 3em;
+    width: 6em;
+    height: 6em;
     margin-left: 2em;
+    /* filter: brightness(0) saturate(100%) invert(12%) sepia(75%) saturate(3641%) hue-rotate(343deg) brightness(91%) contrast(84%); */
+    filter: brightness(0) saturate(100%) invert(15%) sepia(75%) saturate(3641%) hue-rotate(343deg) brightness(95%) contrast(84%);
+    /* filter: brightness(0.9) saturate(100%) invert(15%) sepia(75%) hue-rotate(343deg) brightness(95%) contrast(84%); */
 }
+
 .navbar ul{
     display: flex;
     list-style: none;
@@ -99,7 +106,7 @@
 
 @media (max-width: 768px) {
     .logo{
-        margin-left: 0;
+        margin-left: 1em;
     }
     .nav-container {
         justify-content: space-between;

@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar"
 import { useEffect } from "react"
 const App = () => {
    useEffect(() => {
-     document.title = "Malazi Kenya";
+     document.title = "Royal Assets Limited";
    }, []);
   return (
     <div>

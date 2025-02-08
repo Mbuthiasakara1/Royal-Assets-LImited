@@ -20,9 +20,9 @@ function Footer() {
           d="M987.028 1.58019C1165.08 8.08011 1440 38.2764 1440 38.2764V295.776H0V1.58019C0 1.58019 257.97 41.7305 378 38.2764C656 30.2764 719.184 -8.1977 987.028 1.58019Z"
         ></path>
       </svg>
-      <img src="/images/no-background.png" alt="Logo" className="footer-logo" />
+      <img src="/images/royalnobg 1.png" alt="Logo" className="footer-logo" />
       <div className="footer-info">
-        <h3>Malazi Kenya</h3>
+        <h3> Royal Assets Limited</h3>
         <p>Have an idea? Reach out to us and {"let's"} talk about it.</p>
       </div>
       <div className="quick-links">
@@ -49,9 +49,7 @@ function Footer() {
         <h3>Contact us:</h3>
         <p>
           <MdOutlineEmail />
-          <Link to="mailto:info@malazikenyaltd.com">
-            info@malazikenyaltd.com
-          </Link>
+          <Link to="mailto:info@royalassets.co.ke">info@royalassets.co.ke</Link>
         </p>
         <p>
           <FiPhone />

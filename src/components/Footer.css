@@ -22,9 +22,11 @@
   z-index: 2;
 }
 .footer img{
-    margin-top: 2em;
-    width: 10em;
-    height: 10em;
+    margin-top: 1em;
+    width: 12em;
+    height: 12em;
+    /* filter: brightness(0) saturate(100%) invert(15%) sepia(75%) saturate(3641%) hue-rotate(343deg) brightness(95%) contrast(84%); */
+   
 }
 .footer-info{
     margin-top: 3em;

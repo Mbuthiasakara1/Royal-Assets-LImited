@@ -7,7 +7,7 @@ import { useEffect } from "react";
 
  function Services() {
    useEffect(() => {
-     document.title = "Services | Malazi Kenya";
+     document.title = "Services |   Royal Assets Limited";
    }, []);
     
   return (

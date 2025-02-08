@@ -38,14 +38,9 @@ import './Hero.css'
               />
               <div className="swiper-content">
                 <div className="swiper-text">
-                  {/* <h1>{projects[index]}</h1> */}
+                 
                   <div className="swiper-btn">
-                    {/* <button
-                      className="hero-btn"
-                      onClick={() => navigate("/portfolio")}
-                    >
-                      <span>Learn More</span>
-                    </button> */}
+                    
                   </div>
                 </div>
               </div>

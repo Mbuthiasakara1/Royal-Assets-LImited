@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 
 function Portfolio() {
    useEffect(() => {
-     document.title = "Portfolio | Malazi Kenya";
+     document.title = "Portfolio |   Royal Assets Limited";
    }, []);
   return (
     <>

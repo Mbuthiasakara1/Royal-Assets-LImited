@@ -8,7 +8,7 @@ import { useEffect } from 'react';
 
 function About() {
  useEffect(()=>{
-  document.title="About | Malazi Kenya"
+  document.title="About | Royal Assets Limited"
  },[])
     return (
       <>
@@ -18,7 +18,7 @@ function About() {
             <div className="about-info">
               <h1>About Us</h1>
               <p>
-                Malazi Kenya Limited is an Engineering, Procurement, and
+                Royal Assets Limited is an Engineering, Procurement, and
                 Construction (EPC) contractor, duly incorporated to offer
                 construction services for residential, commercial, industrial,
                 and road projects. Based in Wichita, Kansas, we also have an
@@ -32,7 +32,7 @@ function About() {
             />
             <div className="about-info">
               <p>
-                Malazi Kenya Limited is an Engineering, Procurement, and
+                Royal Assets Limited is an Engineering, Procurement, and
                 Construction (EPC) contractor, duly incorporated to offer
                 construction services for residential, commercial, industrial,
                 and road projects. Based in Wichita, Kansas, we also have an
